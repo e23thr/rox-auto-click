@@ -1,19 +1,20 @@
-from pyautogui import sleep
-from my_libs.mac import click_btn_setting, get_screen_resolution, is_retina, locate_btn_setting
-from my_libs.helpers import is_mac, is_windows
+import tkinter
+from my_libs.helpers import activate_process, get_known_emulators
+from my_libs.windows import get_screen_resolution
 
-if is_mac():
-    import my_libs.mac
+window = tkinter.Tk()
+# screen_resolution = get_screen_resolution()
 
-if is_windows():
-    import my_libs.windows
+# print(screen_resolution)
+# sleep(5)
+# data = locate_btn_start_fishing()
+# print(data)
 
-is_retina_screen = is_retina()
-screen_resolution = get_screen_resolution()
+# click_btn_setting()
 
-print(screen_resolution)
-sleep(3)
-data = locate_btn_setting()
-print(data)
+# print(get_known_emulators())
+known_emulators = get_known_emulators()
+print(known_emulators)
 
-click_btn_setting()
+activate_process(known_emulators[0].get('process_id'))
+window.mainloop()
