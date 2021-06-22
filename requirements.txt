@@ -1,3 +1,4 @@
+autopep8==1.5.7
 cachetools==4.2.2
 comtypes==1.1.10
 Cython==0.29.23
@@ -9,6 +10,7 @@ pefile==2021.5.24
 Pillow==8.2.0
 py2exe==0.10.4.0
 PyAutoGUI==0.9.52
+pycodestyle==2.7.0
 PyGetWindow==0.0.9
 PyMsgBox==1.0.9
 pyperclip==1.8.2
@@ -18,4 +20,5 @@ PyTweening==1.0.3
 pywin32==301
 pywinauto==0.6.8
 six==1.16.0
+toml==0.10.2
 WMI==1.5.1
