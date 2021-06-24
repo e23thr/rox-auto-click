@@ -1,0 +1,1 @@
+pyinstaller --onefile --noconsole rox-auto-click.py
