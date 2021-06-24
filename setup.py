@@ -1,8 +1,9 @@
-from setuptools import setup
+from distutils.core import setup
 
-from Cython.Build import cythonize
+import py2exe
 
 setup(
   name="ROX Auto Click",
-  zip_safe=False
+  zip_safe=False,
+  console=["app.py"]
 )
